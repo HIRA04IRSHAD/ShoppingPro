@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopAI | Intelligent Shopping Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-blob blob1"></div>
+    <div class="bg-blob blob2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <div class="logo-icon"><i class="fa-solid fa-robot"></i></div>
+                <span class="logo-text">Shop<em>AI</em></span>
+            </div>
+            <div class="nav-badge">
+                <span class="pulse-dot"></span>
+                <span id="stats">50+ Products Live</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <main class="main-layout">
+
+        <!-- Chat Panel -->
+        <aside class="chat-panel">
+            <div class="panel-header">
+                <div class="panel-title">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    AI Assistant
+                </div>
+                <span class="status-badge">Online</span>
+            </div>
+
+            <div id="chat-box" class="chat-box">
+                <div class="msg ai-msg">
+                    <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+                    <div class="msg-bubble">Hello! I'm your ShopAI agent. Try: <strong>"Best phone under 20000"</strong></div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-row">
+                    <input type="text" id="user-input" class="chat-input" placeholder="Ask ShopAI anything...">
+                    <button onclick="sendMessage()" class="send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="quick-chips">
+                    <button class="chip" onclick="quickSearch('Best deals today')">🔥 Best Deals</button>
+                    <button class="chip" onclick="quickSearch('Phones under 15000')">📱 Phones</button>
+                    <button class="chip" onclick="quickSearch('Laptops')">💻 Laptops</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Product Panel -->
+        <section class="product-panel">
+
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <div class="toolbar-left">
+                    <div class="sort-wrap">
+                        <i class="fa-solid fa-sliders sort-icon"></i>
+                        <select id="sort-filter" onchange="applySorting()" class="sort-select">
+                            <option value="deal">Best Deals First</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="result-label" id="result-count">Showing Featured Products</div>
+            </div>
+
+            <!-- Grid -->
+            <div id="product-grid" class="product-grid"></div>
+
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        // Quick chip search
+        function quickSearch(query) {
+            document.getElementById('user-input').value = query;
+            sendMessage();
+        }
+
+        // Override chat message rendering for new design
+        const _origSend = sendMessage;
+    </script>
+</body>
+</html>

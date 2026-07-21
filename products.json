@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1, "name": "Redmi Note 13 Pro", "category": "phone", "brand": "Redmi",
+    "price": 14999, "original_price": 17999, "rating": 4.4, "reviews": 3200,
+    "discount": 17, "platform": "Flipkart",
+    "features": ["camera", "battery", "5g", "fast charging"],
+    "specs": {"RAM": "8GB", "Storage": "128GB", "Camera": "200MP", "Battery": "5100mAh"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["bestseller", "camera king"]
+  },
+  {
+    "id": 2, "name": "Realme Narzo 70 Pro", "category": "phone", "brand": "Realme",
+    "price": 13999, "original_price": 15999, "rating": 4.2, "reviews": 1800,
+    "discount": 12, "platform": "Amazon",
+    "features": ["camera", "gaming", "battery", "5g"],
+    "specs": {"RAM": "8GB", "Storage": "128GB", "Camera": "50MP", "Battery": "5000mAh"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["gaming beast"]
+  },
+  {
+    "id": 3, "name": "Samsung Galaxy A35", "category": "phone", "brand": "Samsung",
+    "price": 15999, "original_price": 20000, "rating": 4.3, "reviews": 2500,
+    "discount": 20, "platform": "Amazon",
+    "features": ["camera", "battery", "5g", "amoled"],
+    "specs": {"RAM": "8GB", "Storage": "128GB", "Camera": "50MP", "Battery": "5000mAh"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["premium look", "bestseller"]
+  },
+  {
+    "id": 4, "name": "POCO X6 5G", "category": "phone", "brand": "POCO",
+    "price": 12999, "original_price": 14999, "rating": 4.5, "reviews": 4100,
+    "discount": 13, "platform": "Flipkart",
+    "features": ["gaming", "5g", "fast charging", "camera"],
+    "specs": {"RAM": "12GB", "Storage": "256GB", "Camera": "64MP", "Battery": "5100mAh"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["value for money", "top rated"]
+  },
+  {
+    "id": 5, "name": "iQOO Z9 Lite", "category": "phone", "brand": "iQOO",
+    "price": 9999, "original_price": 11999, "rating": 4.1, "reviews": 950,
+    "discount": 17, "platform": "Flipkart",
+    "features": ["battery", "5g", "fast charging"],
+    "specs": {"RAM": "4GB", "Storage": "128GB", "Camera": "50MP", "Battery": "5000mAh"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["budget 5g"]
+  },
+  {
+    "id": 6, "name": "OnePlus Nord CE4 Lite", "category": "phone", "brand": "OnePlus",
+    "price": 14999, "original_price": 18000, "rating": 4.3, "reviews": 2100,
+    "discount": 17, "platform": "Amazon",
+    "features": ["fast charging", "camera", "5g", "amoled"],
+    "specs": {"RAM": "8GB", "Storage": "128GB", "Camera": "50MP", "Battery": "5110mAh"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["fast charge champion"]
+  },
+  {
+    "id": 7, "name": "Moto G85 5G", "category": "phone", "brand": "Motorola",
+    "price": 13999, "original_price": 15999, "rating": 4.2, "reviews": 1300,
+    "discount": 13, "platform": "Flipkart",
+    "features": ["camera", "5g", "amoled", "battery"],
+    "specs": {"RAM": "8GB", "Storage": "128GB", "Camera": "50MP", "Battery": "5000mAh"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["stock android"]
+  },
+  {
+    "id": 8, "name": "HP Laptop 15s Intel i5", "category": "laptop", "brand": "HP",
+    "price": 42999, "original_price": 52000, "rating": 4.2, "reviews": 1200,
+    "discount": 17, "platform": "Amazon",
+    "features": ["performance", "coding", "office work", "lightweight"],
+    "specs": {"Processor": "Intel i5-12th Gen", "RAM": "8GB", "Storage": "512GB SSD", "Display": "15.6 inch"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["office laptop", "student pick"]
+  },
+  {
+    "id": 9, "name": "Lenovo IdeaPad Slim 3", "category": "laptop", "brand": "Lenovo",
+    "price": 37999, "original_price": 45000, "rating": 4.3, "reviews": 2200,
+    "discount": 16, "platform": "Flipkart",
+    "features": ["coding", "performance", "lightweight", "office work"],
+    "specs": {"Processor": "AMD Ryzen 5", "RAM": "8GB", "Storage": "512GB SSD", "Display": "15.6 inch"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["bestseller", "student pick"]
+  },
+  {
+    "id": 10, "name": "ASUS VivoBook 15", "category": "laptop", "brand": "ASUS",
+    "price": 39999, "original_price": 48000, "rating": 4.1, "reviews": 900,
+    "discount": 17, "platform": "Amazon",
+    "features": ["lightweight", "office work", "coding"],
+    "specs": {"Processor": "Intel i3-12th Gen", "RAM": "8GB", "Storage": "512GB SSD", "Display": "15.6 inch FHD"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["slim design"]
+  },
+  {
+    "id": 11, "name": "Acer Aspire Lite", "category": "laptop", "brand": "Acer",
+    "price": 32999, "original_price": 38000, "rating": 4.0, "reviews": 700,
+    "discount": 13, "platform": "Flipkart",
+    "features": ["budget", "office work", "lightweight"],
+    "specs": {"Processor": "Intel i3", "RAM": "8GB", "Storage": "256GB SSD", "Display": "15.6 inch"},
+    "sentiment": "neutral", "price_drop": false,
+    "tags": ["budget laptop"]
+  },
+  {
+    "id": 12, "name": "Dell Inspiron 15 3520", "category": "laptop", "brand": "Dell",
+    "price": 45999, "original_price": 55000, "rating": 4.4, "reviews": 1800,
+    "discount": 16, "platform": "Amazon",
+    "features": ["performance", "coding", "gaming light"],
+    "specs": {"Processor": "Intel i5-12th Gen", "RAM": "16GB", "Storage": "512GB SSD", "Display": "15.6 inch"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["reliable brand", "coding beast"]
+  },
+  {
+    "id": 13, "name": "Sony WH-1000XM4", "category": "headphones", "brand": "Sony",
+    "price": 19999, "original_price": 29990, "rating": 4.7, "reviews": 8500,
+    "discount": 33, "platform": "Amazon",
+    "features": ["noise cancellation", "wireless", "premium", "long battery"],
+    "specs": {"Type": "Over-Ear", "Battery": "30 hours", "Connectivity": "Bluetooth 5.0", "ANC": "Yes"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["top rated", "audiophile pick"]
+  },
+  {
+    "id": 14, "name": "boAt Rockerz 450 Pro", "category": "headphones", "brand": "boAt",
+    "price": 1299, "original_price": 2999, "rating": 4.1, "reviews": 15000,
+    "discount": 57, "platform": "Amazon",
+    "features": ["wireless", "bass", "long battery"],
+    "specs": {"Type": "On-Ear", "Battery": "70 hours", "Connectivity": "Bluetooth 5.0", "ANC": "No"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["budget pick", "bestseller"]
+  },
+  {
+    "id": 15, "name": "JBL Tune 770NC", "category": "headphones", "brand": "JBL",
+    "price": 5499, "original_price": 8999, "rating": 4.3, "reviews": 3200,
+    "discount": 39, "platform": "Flipkart",
+    "features": ["noise cancellation", "wireless", "bass"],
+    "specs": {"Type": "Over-Ear", "Battery": "44 hours", "Connectivity": "Bluetooth 5.3", "ANC": "Yes"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["mid range best buy"]
+  },
+  {
+    "id": 16, "name": "Oneplus Bullets Z2", "category": "earphones", "brand": "OnePlus",
+    "price": 1299, "original_price": 1799, "rating": 4.2, "reviews": 6000,
+    "discount": 28, "platform": "Amazon",
+    "features": ["bass", "wired", "budget"],
+    "specs": {"Type": "In-Ear", "Driver": "12.4mm", "Mic": "Yes"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["wired budget"]
+  },
+  {
+    "id": 17, "name": "Samsung Galaxy Buds FE", "category": "earphones", "brand": "Samsung",
+    "price": 3999, "original_price": 7999, "rating": 4.2, "reviews": 2100,
+    "discount": 50, "platform": "Amazon",
+    "features": ["noise cancellation", "wireless", "tws"],
+    "specs": {"Type": "TWS", "Battery": "6+18 hours", "ANC": "Yes", "Connectivity": "Bluetooth 5.2"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["value ANC buds"]
+  },
+  {
+    "id": 18, "name": "Boat Airdopes 141", "category": "earphones", "brand": "boAt",
+    "price": 799, "original_price": 2999, "rating": 4.0, "reviews": 42000,
+    "discount": 73, "platform": "Amazon",
+    "features": ["wireless", "tws", "bass", "budget"],
+    "specs": {"Type": "TWS", "Battery": "42 hours total", "ANC": "No"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["cheapest tws", "bestseller"]
+  },
+  {
+    "id": 19, "name": "Samsung 43 inch 4K Smart TV", "category": "tv", "brand": "Samsung",
+    "price": 29999, "original_price": 41000, "rating": 4.3, "reviews": 3100,
+    "discount": 27, "platform": "Flipkart",
+    "features": ["4k", "smart tv", "hdr", "voice control"],
+    "specs": {"Size": "43 inch", "Resolution": "4K UHD", "Smart": "Yes", "HDR": "HDR10+"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["living room pick"]
+  },
+  {
+    "id": 20, "name": "Mi 40 inch FHD Smart TV", "category": "tv", "brand": "Xiaomi",
+    "price": 18999, "original_price": 24000, "rating": 4.2, "reviews": 4500,
+    "discount": 21, "platform": "Amazon",
+    "features": ["smart tv", "hd", "budget"],
+    "specs": {"Size": "40 inch", "Resolution": "FHD", "Smart": "Yes"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["budget smart tv"]
+  },
+  {
+    "id": 21, "name": "LG 32 inch Smart TV", "category": "tv", "brand": "LG",
+    "price": 15999, "original_price": 20000, "rating": 4.1, "reviews": 1200,
+    "discount": 20, "platform": "Amazon",
+    "features": ["smart tv", "hd", "compact"],
+    "specs": {"Size": "32 inch", "Resolution": "HD Ready", "Smart": "Yes"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["bedroom tv"]
+  },
+  {
+    "id": 22, "name": "Whirlpool 1.5 Ton 3 Star AC", "category": "ac", "brand": "Whirlpool",
+    "price": 31999, "original_price": 40000, "rating": 4.2, "reviews": 1800,
+    "discount": 20, "platform": "Flipkart",
+    "features": ["energy saving", "cooling", "air purifier"],
+    "specs": {"Capacity": "1.5 Ton", "Star Rating": "3 Star", "Type": "Split AC"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["summer deal"]
+  },
+  {
+    "id": 23, "name": "Voltas 1.5 Ton 5 Star AC", "category": "ac", "brand": "Voltas",
+    "price": 35999, "original_price": 45000, "rating": 4.4, "reviews": 2200,
+    "discount": 20, "platform": "Amazon",
+    "features": ["energy saving", "5 star", "cooling", "inverter"],
+    "specs": {"Capacity": "1.5 Ton", "Star Rating": "5 Star", "Type": "Split Inverter AC"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["5 star inverter", "bestseller"]
+  },
+  {
+    "id": 24, "name": "Blue Star 1 Ton 3 Star AC", "category": "ac", "brand": "Blue Star",
+    "price": 26999, "original_price": 33000, "rating": 4.1, "reviews": 900,
+    "discount": 18, "platform": "Flipkart",
+    "features": ["cooling", "energy saving", "compact"],
+    "specs": {"Capacity": "1 Ton", "Star Rating": "3 Star", "Type": "Split AC"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["small room ac"]
+  },
+  {
+    "id": 25, "name": "Noise ColorFit Pro 4", "category": "smartwatch", "brand": "Noise",
+    "price": 1999, "original_price": 4999, "rating": 4.1, "reviews": 12000,
+    "discount": 60, "platform": "Amazon",
+    "features": ["fitness tracking", "heart rate", "budget", "bluetooth calling"],
+    "specs": {"Display": "1.85 inch AMOLED", "Battery": "7 days", "Call": "Yes"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["budget smartwatch", "bestseller"]
+  },
+  {
+    "id": 26, "name": "boAt Wave Sigma", "category": "smartwatch", "brand": "boAt",
+    "price": 1499, "original_price": 3999, "rating": 4.0, "reviews": 8500,
+    "discount": 63, "platform": "Flipkart",
+    "features": ["fitness tracking", "heart rate", "budget"],
+    "specs": {"Display": "1.85 inch TFT", "Battery": "5 days", "Call": "No"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["cheapest watch"]
+  },
+  {
+    "id": 27, "name": "Fire-Boltt Phoenix Ultra", "category": "smartwatch", "brand": "Fire-Boltt",
+    "price": 2499, "original_price": 5999, "rating": 4.2, "reviews": 5500,
+    "discount": 58, "platform": "Amazon",
+    "features": ["fitness tracking", "heart rate", "bluetooth calling", "gps"],
+    "specs": {"Display": "1.96 inch HD", "Battery": "7 days", "Call": "Yes", "GPS": "Yes"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["gps budget watch"]
+  },
+  {
+    "id": 28, "name": "Logitech MK235 Keyboard Mouse Combo", "category": "accessories", "brand": "Logitech",
+    "price": 1295, "original_price": 2000, "rating": 4.3, "reviews": 9200,
+    "discount": 35, "platform": "Amazon",
+    "features": ["wireless", "office", "keyboard mouse combo"],
+    "specs": {"Type": "Wireless", "Battery": "24 months", "Connection": "USB Nano Receiver"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["office essential"]
+  },
+  {
+    "id": 29, "name": "Ant Esports Gaming Mouse", "category": "accessories", "brand": "Ant Esports",
+    "price": 699, "original_price": 1299, "rating": 4.1, "reviews": 3200,
+    "discount": 46, "platform": "Amazon",
+    "features": ["gaming", "wired", "rgb"],
+    "specs": {"DPI": "12800", "Type": "Wired", "RGB": "Yes", "Buttons": "7"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["budget gaming"]
+  },
+  {
+    "id": 30, "name": "Redgear A20 Gaming Headphone", "category": "accessories", "brand": "Redgear",
+    "price": 899, "original_price": 1999, "rating": 4.0, "reviews": 5400,
+    "discount": 55, "platform": "Amazon",
+    "features": ["gaming", "wired", "bass", "mic"],
+    "specs": {"Type": "Over-Ear", "Connectivity": "3.5mm+USB", "Mic": "Yes"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["budget gaming headset"]
+  },
+  {
+    "id": 31, "name": "Anker 20000mAh Power Bank", "category": "accessories", "brand": "Anker",
+    "price": 2299, "original_price": 3499, "rating": 4.5, "reviews": 7800,
+    "discount": 34, "platform": "Amazon",
+    "features": ["powerbank", "fast charging", "high capacity"],
+    "specs": {"Capacity": "20000mAh", "Output": "22.5W", "Ports": "2 USB + 1 USB-C"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["travel essential", "top rated"]
+  },
+  {
+    "id": 32, "name": "Mi 10000mAh Slim Power Bank", "category": "accessories", "brand": "Xiaomi",
+    "price": 999, "original_price": 1499, "rating": 4.3, "reviews": 22000,
+    "discount": 33, "platform": "Flipkart",
+    "features": ["powerbank", "slim", "fast charging"],
+    "specs": {"Capacity": "10000mAh", "Output": "18W", "Ports": "2 USB"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["pocket friendly"]
+  },
+  {
+    "id": 33, "name": "Portronics Mport 7C Hub", "category": "accessories", "brand": "Portronics",
+    "price": 1299, "original_price": 2299, "rating": 4.1, "reviews": 1800,
+    "discount": 43, "platform": "Amazon",
+    "features": ["usb hub", "multiport", "office"],
+    "specs": {"Ports": "7 in 1", "USB-C": "Yes", "HDMI": "Yes", "SD Card": "Yes"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["laptop accessory"]
+  },
+  {
+    "id": 34, "name": "Vivo T3x 5G", "category": "phone", "brand": "Vivo",
+    "price": 10999, "original_price": 12999, "rating": 4.1, "reviews": 1500,
+    "discount": 15, "platform": "Flipkart",
+    "features": ["5g", "battery", "fast charging", "camera"],
+    "specs": {"RAM": "6GB", "Storage": "128GB", "Camera": "50MP", "Battery": "6000mAh"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["battery monster", "budget 5g"]
+  },
+  {
+    "id": 35, "name": "Infinix Hot 40 Pro", "category": "phone", "brand": "Infinix",
+    "price": 8999, "original_price": 10999, "rating": 3.9, "reviews": 800,
+    "discount": 18, "platform": "Flipkart",
+    "features": ["budget", "camera", "battery"],
+    "specs": {"RAM": "8GB", "Storage": "256GB", "Camera": "108MP", "Battery": "5000mAh"},
+    "sentiment": "neutral", "price_drop": false,
+    "tags": ["ultra budget"]
+  },
+  {
+    "id": 36, "name": "LG 7 kg Front Load Washing Machine", "category": "appliances", "brand": "LG",
+    "price": 25999, "original_price": 33000, "rating": 4.3, "reviews": 2100,
+    "discount": 21, "platform": "Amazon",
+    "features": ["front load", "inverter", "auto wash", "energy saving"],
+    "specs": {"Capacity": "7 kg", "Type": "Front Load", "RPM": "1000", "Star Rating": "5 Star"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["home essential"]
+  },
+  {
+    "id": 37, "name": "Samsung 8 kg Top Load Washing Machine", "category": "appliances", "brand": "Samsung",
+    "price": 21999, "original_price": 28000, "rating": 4.2, "reviews": 1500,
+    "discount": 21, "platform": "Flipkart",
+    "features": ["top load", "auto wash", "energy saving"],
+    "specs": {"Capacity": "8 kg", "Type": "Top Load", "RPM": "680", "Star Rating": "5 Star"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["family wash"]
+  },
+  {
+    "id": 38, "name": "Realme GT 6T 5G", "category": "phone", "brand": "Realme",
+    "price": 27999, "original_price": 32000, "rating": 4.5, "reviews": 2800,
+    "discount": 13, "platform": "Flipkart",
+    "features": ["performance", "gaming", "5g", "fast charging", "camera"],
+    "specs": {"RAM": "12GB", "Storage": "256GB", "Camera": "50MP", "Battery": "5500mAh"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["flagship killer", "gaming phone"]
+  },
+  {
+    "id": 39, "name": "Nothing Phone 2a Plus", "category": "phone", "brand": "Nothing",
+    "price": 21999, "original_price": 25999, "rating": 4.4, "reviews": 1800,
+    "discount": 15, "platform": "Flipkart",
+    "features": ["camera", "5g", "fast charging", "amoled", "unique design"],
+    "specs": {"RAM": "12GB", "Storage": "256GB", "Camera": "50MP", "Battery": "5000mAh"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["premium mid-range", "unique style"]
+  },
+  {
+    "id": 40, "name": "OnePlus 12R 5G", "category": "phone", "brand": "OnePlus",
+    "price": 29999, "original_price": 39999, "rating": 4.6, "reviews": 5200,
+    "discount": 25, "platform": "Amazon",
+    "features": ["performance", "gaming", "fast charging", "5g", "camera"],
+    "specs": {"RAM": "16GB", "Storage": "256GB", "Camera": "50MP", "Battery": "5500mAh"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["flagship killer", "top rated", "bestseller"]
+  },
+  {
+    "id": 41, "name": "HP Omen 15 Gaming Laptop", "category": "laptop", "brand": "HP",
+    "price": 79999, "original_price": 95000, "rating": 4.4, "reviews": 1100,
+    "discount": 16, "platform": "Amazon",
+    "features": ["gaming", "performance", "high end"],
+    "specs": {"Processor": "Intel i7-12th Gen", "RAM": "16GB", "GPU": "RTX 3060", "Storage": "512GB SSD"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["gaming beast", "high end"]
+  },
+  {
+    "id": 42, "name": "Lenovo LOQ Gaming Laptop", "category": "laptop", "brand": "Lenovo",
+    "price": 65999, "original_price": 80000, "rating": 4.3, "reviews": 900,
+    "discount": 18, "platform": "Flipkart",
+    "features": ["gaming", "performance"],
+    "specs": {"Processor": "Intel i5-12th Gen", "RAM": "16GB", "GPU": "RTX 4050", "Storage": "512GB SSD"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["budget gaming laptop"]
+  },
+  {
+    "id": 43, "name": "Bosch 260L Refrigerator", "category": "appliances", "brand": "Bosch",
+    "price": 24999, "original_price": 30000, "rating": 4.4, "reviews": 1300,
+    "discount": 17, "platform": "Amazon",
+    "features": ["refrigerator", "frost free", "energy saving"],
+    "specs": {"Capacity": "260L", "Type": "Double Door", "Star Rating": "3 Star"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["kitchen essential"]
+  },
+  {
+    "id": 44, "name": "Godrej 190L Single Door Fridge", "category": "appliances", "brand": "Godrej",
+    "price": 12999, "original_price": 16000, "rating": 4.1, "reviews": 2100,
+    "discount": 19, "platform": "Flipkart",
+    "features": ["refrigerator", "budget", "energy saving"],
+    "specs": {"Capacity": "190L", "Type": "Single Door", "Star Rating": "5 Star"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["budget fridge", "small family"]
+  },
+  {
+    "id": 45, "name": "Philips Air Fryer HD9200", "category": "appliances", "brand": "Philips",
+    "price": 5999, "original_price": 8999, "rating": 4.4, "reviews": 4800,
+    "discount": 33, "platform": "Amazon",
+    "features": ["cooking", "healthy", "oil free"],
+    "specs": {"Capacity": "4.1L", "Wattage": "1400W", "Type": "Air Fryer"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["kitchen gadget", "bestseller"]
+  },
+  {
+    "id": 46, "name": "Havells Instanio Kettle", "category": "appliances", "brand": "Havells",
+    "price": 1299, "original_price": 1999, "rating": 4.3, "reviews": 3200,
+    "discount": 35, "platform": "Flipkart",
+    "features": ["kettle", "fast boiling", "kitchen"],
+    "specs": {"Capacity": "1.5L", "Wattage": "1500W"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["kitchen essential"]
+  },
+  {
+    "id": 47, "name": "Apple AirPods 4", "category": "earphones", "brand": "Apple",
+    "price": 12900, "original_price": 14900, "rating": 4.6, "reviews": 3500,
+    "discount": 13, "platform": "Amazon",
+    "features": ["tws", "premium", "noise cancellation", "wireless"],
+    "specs": {"Type": "TWS", "Battery": "6+30 hours", "ANC": "Yes", "Chip": "H2"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["premium earbuds", "apple ecosystem"]
+  },
+  {
+    "id": 48, "name": "Sony WF-C700N", "category": "earphones", "brand": "Sony",
+    "price": 5999, "original_price": 9999, "rating": 4.4, "reviews": 2100,
+    "discount": 40, "platform": "Amazon",
+    "features": ["noise cancellation", "tws", "wireless", "bass"],
+    "specs": {"Type": "TWS", "Battery": "7.5+15 hours", "ANC": "Yes"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["mid range best buy", "ANC buds"]
+  },
+  {
+    "id": 49, "name": "POCO F6 5G", "category": "phone", "brand": "POCO",
+    "price": 21999, "original_price": 25999, "rating": 4.5, "reviews": 3800,
+    "discount": 15, "platform": "Flipkart",
+    "features": ["performance", "gaming", "5g", "fast charging"],
+    "specs": {"RAM": "12GB", "Storage": "256GB", "Processor": "Snapdragon 8s Gen 3", "Battery": "5000mAh"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["performance king", "value flagship"]
+  },
+  {
+    "id": 50, "name": "Redmi Pad SE", "category": "tablet", "brand": "Redmi",
+    "price": 14999, "original_price": 18000, "rating": 4.2, "reviews": 2200,
+    "discount": 17, "platform": "Flipkart",
+    "features": ["tablet", "budget", "study", "entertainment"],
+    "specs": {"Display": "11 inch FHD+", "RAM": "6GB", "Storage": "128GB", "Battery": "8000mAh"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["student tablet", "budget"]
+  },
+  {
+    "id": 51, "name": "Samsung Galaxy Tab A9", "category": "tablet", "brand": "Samsung",
+    "price": 17999, "original_price": 22000, "rating": 4.3, "reviews": 1500,
+    "discount": 18, "platform": "Amazon",
+    "features": ["tablet", "entertainment", "study", "amoled"],
+    "specs": {"Display": "8.7 inch TFT", "RAM": "4GB", "Storage": "64GB", "Battery": "5100mAh"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["compact tablet"]
+  },
+  {
+    "id": 52, "name": "Google Pixel 8", "category": "phone", "brand": "Google",
+    "price": 62999, "original_price": 75999, "rating": 4.6, "reviews": 1200,
+    "discount": 17, "platform": "Flipkart",
+    "features": ["ai camera", "stock android", "5g", "compact"],
+    "specs": {"RAM": "8GB", "Storage": "128GB", "Camera": "50MP", "Battery": "4575mAh"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["clean ui", "camera flagship"]
+  },
+  {
+    "id": 53, "name": "Apple iPhone 15", "category": "phone", "brand": "Apple",
+    "price": 69999, "original_price": 79900, "rating": 4.7, "reviews": 8500,
+    "discount": 12, "platform": "Amazon",
+    "features": ["dynamic island", "camera", "5g", "performance"],
+    "specs": {"RAM": "6GB", "Storage": "128GB", "Camera": "48MP", "Chip": "A16 Bionic"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["premium", "bestseller"]
+  },
+  {
+    "id": 54, "name": "Apple MacBook Air M2", "category": "laptop", "brand": "Apple",
+    "price": 84990, "original_price": 99900, "rating": 4.8, "reviews": 3400,
+    "discount": 15, "platform": "Amazon",
+    "features": ["coding", "performance", "lightweight", "battery life"],
+    "specs": {"Processor": "Apple M2", "RAM": "8GB", "Storage": "256GB SSD", "Display": "13.6 inch Liquid Retina"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["coding beast", "student pick"]
+  },
+  {
+    "id": 55, "name": "MSI Cyborg 15", "category": "laptop", "brand": "MSI",
+    "price": 64999, "original_price": 82000, "rating": 4.3, "reviews": 450,
+    "discount": 20, "platform": "Flipkart",
+    "features": ["gaming", "performance", "high refresh rate"],
+    "specs": {"Processor": "Intel i5-12th Gen", "RAM": "16GB", "GPU": "RTX 4050", "Storage": "512GB SSD"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["gaming beast", "value gaming"]
+  },
+  {
+    "id": 56, "name": "Bose QuietComfort 45", "category": "headphones", "brand": "Bose",
+    "price": 24999, "original_price": 29900, "rating": 4.6, "reviews": 2100,
+    "discount": 16, "platform": "Amazon",
+    "features": ["noise cancellation", "wireless", "comfort", "premium"],
+    "specs": {"Type": "Over-Ear", "Battery": "24 hours", "ANC": "Yes", "Connectivity": "Bluetooth 5.1"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["travel pick", "top rated"]
+  },
+  {
+    "id": 57, "name": "Realme Buds Air 6", "category": "earphones", "brand": "Realme",
+    "price": 2999, "original_price": 4999, "rating": 4.3, "reviews": 5200,
+    "discount": 40, "platform": "Flipkart",
+    "features": ["noise cancellation", "tws", "fast charging", "bass"],
+    "specs": {"Type": "TWS", "Battery": "40 hours", "ANC": "50dB", "Driver": "12.4mm"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["budget ANC", "value for money"]
+  },
+  {
+    "id": 58, "name": "Sony Bravia 55 inch 4K", "category": "tv", "brand": "Sony",
+    "price": 54999, "original_price": 69900, "rating": 4.7, "reviews": 4100,
+    "discount": 21, "platform": "Amazon",
+    "features": ["4k", "google tv", "hdr", "dolby atmos"],
+    "specs": {"Size": "55 inch", "Resolution": "4K Ultra HD", "Refresh Rate": "60Hz"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["cinema experience", "premium tv"]
+  },
+  {
+    "id": 59, "name": "Daikin 1.5 Ton 5 Star AC", "category": "ac", "brand": "Daikin",
+    "price": 44999, "original_price": 55000, "rating": 4.5, "reviews": 3100,
+    "discount": 18, "platform": "Amazon",
+    "features": ["energy saving", "cooling", "quiet operation", "inverter"],
+    "specs": {"Capacity": "1.5 Ton", "Star Rating": "5 Star", "Type": "Split Inverter"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["reliable", "bestseller"]
+  },
+  {
+    "id": 60, "name": "Apple Watch SE (2nd Gen)", "category": "smartwatch", "brand": "Apple",
+    "price": 23900, "original_price": 29900, "rating": 4.6, "reviews": 7800,
+    "discount": 20, "platform": "Amazon",
+    "features": ["fitness tracking", "heart rate", "crash detection", "ecosystem"],
+    "specs": {"Display": "Retina OLED", "Battery": "18 hours", "Water Resistance": "50m"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["premium smartwatch", "fitness companion"]
+  },
+  {
+    "id": 61, "name": "SanDisk 1TB Portable SSD", "category": "accessories", "brand": "SanDisk",
+    "price": 8499, "original_price": 12000, "rating": 4.5, "reviews": 15000,
+    "discount": 29, "platform": "Amazon",
+    "features": ["storage", "high speed", "portable", "durable"],
+    "specs": {"Capacity": "1TB", "Read Speed": "1050MB/s", "Interface": "USB 3.2 Gen 2"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["student pick", "pro accessory"]
+  },
+  {
+    "id": 62, "name": "Panasonic 20L Microwave", "category": "appliances", "brand": "Panasonic",
+    "price": 5999, "original_price": 7500, "rating": 4.2, "reviews": 2100,
+    "discount": 20, "platform": "Flipkart",
+    "features": ["cooking", "compact", "auto cook menu"],
+    "specs": {"Capacity": "20L", "Type": "Solo", "Wattage": "800W"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["kitchen essential", "budget friendly"]
+  },
+  {
+    "id": 63, "name": "Apple iPad Air (M2)", "category": "tablet", "brand": "Apple",
+    "price": 54900, "original_price": 59900, "rating": 4.8, "reviews": 900,
+    "discount": 8, "platform": "Amazon",
+    "features": ["study", "performance", "apple pencil support", "gaming"],
+    "specs": {"Display": "11 inch Liquid Retina", "Chip": "M2", "Storage": "128GB"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["student tablet", "top rated"]
+  },
+  {
+    "id": 64, "name": "TP-Link Archer AX23 Router", "category": "accessories", "brand": "TP-Link",
+    "price": 3999, "original_price": 5999, "rating": 4.4, "reviews": 5200,
+    "discount": 33, "platform": "Amazon",
+    "features": ["wifi 6", "fast speed", "dual band"],
+    "specs": {"Speed": "1.8 Gbps", "Ports": "4 Gigabit LAN", "Antennas": "4 External"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["work from home", "stable net"]
+  },
+  {
+    "id": 65, "name": "Motorola Edge 50 Pro", "category": "phone", "brand": "Motorola",
+    "price": 31999, "original_price": 35999, "rating": 4.4, "reviews": 2100,
+    "discount": 11, "platform": "Flipkart",
+    "features": ["fast charging", "camera", "5g", "curved display"],
+    "specs": {"RAM": "8GB", "Storage": "256GB", "Camera": "50MP", "Battery": "4500mAh"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["premium look", "fast charge"]
+  },
+  {
+    "id": 66, "name": "iQOO Neo 9 Pro", "category": "phone", "brand": "iQOO",
+    "price": 36999, "original_price": 39999, "rating": 4.6, "reviews": 3200,
+    "discount": 7, "platform": "Amazon",
+    "features": ["gaming", "performance", "5g", "fast charging"],
+    "specs": {"RAM": "8GB", "Storage": "256GB", "Processor": "Snapdragon 8 Gen 2", "Battery": "5160mAh"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["gaming beast", "performance king"]
+  },
+  {
+    "id": 67, "name": "Acer Predator Helios Neo 16", "category": "laptop", "brand": "Acer",
+    "price": 109990, "original_price": 129990, "rating": 4.5, "reviews": 850,
+    "discount": 15, "platform": "Amazon",
+    "features": ["gaming", "performance", "high end", "rgb"],
+    "specs": {"Processor": "Intel i7-13th Gen", "RAM": "16GB", "GPU": "RTX 4060", "Storage": "1TB SSD"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["hardcore gaming", "pro choice"]
+  },
+  {
+    "id": 68, "name": "ASUS ROG Strix G16", "category": "laptop", "brand": "ASUS",
+    "price": 89990, "original_price": 105000, "rating": 4.6, "reviews": 1100,
+    "discount": 14, "platform": "Flipkart",
+    "features": ["gaming", "performance", "high refresh rate"],
+    "specs": {"Processor": "Intel i5-13th Gen", "RAM": "16GB", "GPU": "RTX 4050", "Storage": "512GB SSD"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["rog series", "gamer pick"]
+  },
+  {
+    "id": 69, "name": "Sennheiser HD 450BT", "category": "headphones", "brand": "Sennheiser",
+    "price": 7990, "original_price": 14990, "rating": 4.3, "reviews": 3400,
+    "discount": 46, "platform": "Amazon",
+    "features": ["noise cancellation", "wireless", "premium sound"],
+    "specs": {"Type": "Over-Ear", "Battery": "30 hours", "ANC": "Yes", "Connectivity": "Bluetooth 5.0"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["audiophile", "great deal"]
+  },
+  {
+    "id": 70, "name": "Nothing Ear (a)", "category": "earphones", "brand": "Nothing",
+    "price": 7999, "original_price": 10999, "rating": 4.5, "reviews": 1200,
+    "discount": 27, "platform": "Flipkart",
+    "features": ["noise cancellation", "tws", "unique design", "bass"],
+    "specs": {"Type": "TWS", "Battery": "42.5 hours", "ANC": "45dB", "Driver": "11mm"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["stylish buds", "bass heavy"]
+  },
+  {
+    "id": 71, "name": "Hisense 55 inch QLED 4K TV", "category": "tv", "brand": "Hisense",
+    "price": 34999, "original_price": 49999, "rating": 4.2, "reviews": 2100,
+    "discount": 30, "platform": "Amazon",
+    "features": ["4k", "qled", "smart tv", "dolby vision"],
+    "specs": {"Size": "55 inch", "Resolution": "4K UHD", "Panel": "QLED", "Smart": "Google TV"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["value qled", "living room pick"]
+  },
+  {
+    "id": 72, "name": "LG 1 Ton 4 Star AC", "category": "ac", "brand": "LG",
+    "price": 32990, "original_price": 45000, "rating": 4.3, "reviews": 1500,
+    "discount": 26, "platform": "Flipkart",
+    "features": ["energy saving", "inverter", "cooling"],
+    "specs": {"Capacity": "1 Ton", "Star Rating": "4 Star", "Type": "Dual Inverter"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["energy efficient", "small room"]
+  },
+  {
+    "id": 73, "name": "Samsung Galaxy Watch 6", "category": "smartwatch", "brand": "Samsung",
+    "price": 27999, "original_price": 33999, "rating": 4.5, "reviews": 4200,
+    "discount": 17, "platform": "Amazon",
+    "features": ["fitness tracking", "heart rate", "ecg", "premium"],
+    "specs": {"Display": "1.3 inch AMOLED", "Battery": "40 hours", "OS": "Wear OS"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["premium smartwatch", "android ecosystem"]
+  },
+  {
+    "id": 74, "name": "WD Elements 2TB External HDD", "category": "accessories", "brand": "Western Digital",
+    "price": 5499, "original_price": 8500, "rating": 4.5, "reviews": 25000,
+    "discount": 35, "platform": "Amazon",
+    "features": ["storage", "portable", "office"],
+    "specs": {"Capacity": "2TB", "Interface": "USB 3.0", "Type": "HDD"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["reliable storage", "bestseller"]
+  },
+  {
+    "id": 75, "name": "IFB 30L Convection Microwave", "category": "appliances", "brand": "IFB",
+    "price": 13990, "original_price": 18500, "rating": 4.3, "reviews": 3200,
+    "discount": 24, "platform": "Amazon",
+    "features": ["cooking", "baking", "auto cook"],
+    "specs": {"Capacity": "30L", "Type": "Convection", "Wattage": "900W"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["baking essential", "family size"]
+  },
+  {
+    "id": 76, "name": "Lenovo Tab P11 Gen 2", "category": "tablet", "brand": "Lenovo",
+    "price": 19999, "original_price": 27000, "rating": 4.2, "reviews": 1100,
+    "discount": 25, "platform": "Flipkart",
+    "features": ["tablet", "entertainment", "study", "stylus support"],
+    "specs": {"Display": "11.5 inch 2K", "RAM": "6GB", "Storage": "128GB", "Battery": "7700mAh"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["mid range tablet", "student pick"]
+  },
+  {
+    "id": 77, "name": "Samsung Galaxy S24 Ultra", "category": "phone", "brand": "Samsung",
+    "price": 129999, "original_price": 134999, "rating": 4.8, "reviews": 5100,
+    "discount": 3, "platform": "Amazon",
+    "features": ["ai camera", "stylus", "performance", "5g", "premium"],
+    "specs": {"RAM": "12GB", "Storage": "256GB", "Camera": "200MP", "Battery": "5000mAh"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["ultra flagship", "pro camera"]
+  },
+  {
+    "id": 78, "name": "HP Pavilion 14", "category": "laptop", "brand": "HP",
+    "price": 56990, "original_price": 65000, "rating": 4.4, "reviews": 2800,
+    "discount": 12, "platform": "Amazon",
+    "features": ["office work", "lightweight", "performance"],
+    "specs": {"Processor": "Intel i5-12th Gen", "RAM": "16GB", "Storage": "512GB SSD", "Display": "14 inch FHD"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["office laptop", "compact laptop"]
+  },
+  {
+    "id": 79, "name": "JBL Quantum 100", "category": "headphones", "brand": "JBL",
+    "price": 1999, "original_price": 3999, "rating": 4.1, "reviews": 15000,
+    "discount": 50, "platform": "Amazon",
+    "features": ["gaming", "wired", "mic"],
+    "specs": {"Type": "Over-Ear", "Connectivity": "3.5mm", "Mic": "Detachable"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["budget gaming", "bestseller"]
+  },
+  {
+    "id": 80, "name": "boAt Airdopes 161", "category": "earphones", "brand": "boAt",
+    "price": 999, "original_price": 2490, "rating": 4.0, "reviews": 32000,
+    "discount": 59, "platform": "Flipkart",
+    "features": ["wireless", "tws", "fast charging", "budget"],
+    "specs": {"Type": "TWS", "Battery": "40 hours", "Driver": "10mm"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["budget tws", "student pick"]
+  },
+  {
+    "id": 81, "name": "TCL 65 inch 4K Smart TV", "category": "tv", "brand": "TCL",
+    "price": 42990, "original_price": 69990, "rating": 4.3, "reviews": 1800,
+    "discount": 38, "platform": "Amazon",
+    "features": ["4k", "smart tv", "bezel-less", "google tv"],
+    "specs": {"Size": "65 inch", "Resolution": "4K UHD", "Smart": "Yes"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["large screen", "value 4k"]
+  },
+  {
+    "id": 82, "name": "Lloyd 1.5 Ton 3 Star AC", "category": "ac", "brand": "Lloyd",
+    "price": 29990, "original_price": 45990, "rating": 4.1, "reviews": 2200,
+    "discount": 34, "platform": "Amazon",
+    "features": ["cooling", "budget", "inverter"],
+    "specs": {"Capacity": "1.5 Ton", "Star Rating": "3 Star", "Type": "Split Inverter"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["budget ac", "summer deal"]
+  },
+  {
+    "id": 83, "name": "Amazfit Active", "category": "smartwatch", "brand": "Amazfit",
+    "price": 10999, "original_price": 12999, "rating": 4.4, "reviews": 950,
+    "discount": 15, "platform": "Amazon",
+    "features": ["fitness tracking", "gps", "amoled", "long battery"],
+    "specs": {"Display": "1.75 inch AMOLED", "Battery": "14 days", "GPS": "Built-in"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["fitness watch", "long lasting"]
+  },
+  {
+    "id": 84, "name": "Corsair HS50 Pro", "category": "accessories", "brand": "Corsair",
+    "price": 3499, "original_price": 4999, "rating": 4.3, "reviews": 4100,
+    "discount": 30, "platform": "Amazon",
+    "features": ["gaming", "wired", "comfort"],
+    "specs": {"Type": "Over-Ear", "Connectivity": "3.5mm", "Mic": "Noise Cancelling"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["pro gaming", "comfortable"]
+  },
+  {
+    "id": 85, "name": "Eureka Forbes Water Purifier", "category": "appliances", "brand": "Eureka Forbes",
+    "price": 14999, "original_price": 20000, "rating": 4.4, "reviews": 5600,
+    "discount": 25, "platform": "Flipkart",
+    "features": ["ro+uv", "water purifier", "healthy"],
+    "specs": {"Type": "RO+UV+UF", "Capacity": "7L", "Installation": "Wall Mount"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["home essential", "safe water"]
+  },
+  {
+    "id": 86, "name": "OnePlus Pad", "category": "tablet", "brand": "OnePlus",
+    "price": 37999, "original_price": 39999, "rating": 4.5, "reviews": 1800,
+    "discount": 5, "platform": "Amazon",
+    "features": ["tablet", "performance", "high refresh rate", "entertainment"],
+    "specs": {"Display": "11.61 inch 144Hz", "RAM": "8GB", "Storage": "128GB", "Battery": "9510mAh"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["premium tablet", "smooth display"]
+  },
+  {
+    "id": 87, "name": "OnePlus Nord 4", "category": "phone", "brand": "OnePlus",
+    "price": 29999, "original_price": 32999, "rating": 4.5, "reviews": 4500,
+    "discount": 9, "platform": "Amazon",
+    "features": ["metal body", "5g", "performance", "fast charging"],
+    "specs": {"RAM": "8GB", "Storage": "256GB", "Processor": "Snapdragon 7+ Gen 3", "Battery": "5500mAh"},
+    "sentiment": "very positive", "price_drop": true,
+    "tags": ["mid-range king", "metal unibody"]
+  },
+  {
+    "id": 88, "name": "Dell XPS 13", "category": "laptop", "brand": "Dell",
+    "price": 115990, "original_price": 130000, "rating": 4.7, "reviews": 600,
+    "discount": 10, "platform": "Amazon",
+    "features": ["premium", "lightweight", "office work", "high end"],
+    "specs": {"Processor": "Intel i7-12th Gen", "RAM": "16GB", "Storage": "512GB SSD", "Display": "13.4 inch FHD+"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["executive pick", "ultra portable"]
+  },
+  {
+    "id": 89, "name": "Skullcandy Hesh ANC", "category": "headphones", "brand": "Skullcandy",
+    "price": 8999, "original_price": 14999, "rating": 4.2, "reviews": 1500,
+    "discount": 40, "platform": "Flipkart",
+    "features": ["noise cancellation", "wireless", "bass"],
+    "specs": {"Type": "Over-Ear", "Battery": "22 hours", "ANC": "Yes", "Connectivity": "Bluetooth 5.0"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["bass lovers", "stylish"]
+  },
+  {
+    "id": 90, "name": "Sony WF-1000XM5", "category": "earphones", "brand": "Sony",
+    "price": 24990, "original_price": 29990, "rating": 4.6, "reviews": 2300,
+    "discount": 16, "platform": "Amazon",
+    "features": ["noise cancellation", "tws", "premium sound", "wireless"],
+    "specs": {"Type": "TWS", "Battery": "8+16 hours", "ANC": "Yes", "Hi-Res": "Yes"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["top tier ANC", "audiophile tws"]
+  },
+  {
+    "id": 91, "name": "Acer 43 inch Smart TV", "category": "tv", "brand": "Acer",
+    "price": 19999, "original_price": 29990, "rating": 4.1, "reviews": 1200,
+    "discount": 33, "platform": "Flipkart",
+    "features": ["smart tv", "4k", "budget"],
+    "specs": {"Size": "43 inch", "Resolution": "4K UHD", "Smart": "Android TV"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["budget 4k", "affordable smart tv"]
+  },
+  {
+    "id": 92, "name": "Carrier 1.5 Ton 5 Star AC", "category": "ac", "brand": "Carrier",
+    "price": 41990, "original_price": 58990, "rating": 4.4, "reviews": 1900,
+    "discount": 28, "platform": "Amazon",
+    "features": ["energy saving", "cooling", "inverter", "quiet"],
+    "specs": {"Capacity": "1.5 Ton", "Star Rating": "5 Star", "Type": "Split Inverter"},
+    "sentiment": "positive", "price_drop": false,
+    "tags": ["heavy duty cooling", "5 star efficient"]
+  },
+  {
+    "id": 93, "name": "Garmin Venu 3", "category": "smartwatch", "brand": "Garmin",
+    "price": 42990, "original_price": 45990, "rating": 4.7, "reviews": 500,
+    "discount": 6, "platform": "Amazon",
+    "features": ["fitness tracking", "gps", "amoled", "health monitoring"],
+    "specs": {"Display": "1.4 inch AMOLED", "Battery": "14 days", "GPS": "Advanced Built-in"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["pro fitness", "premium sports watch"]
+  },
+  {
+    "id": 94, "name": "Zebronics Mechanical Keyboard", "category": "accessories", "brand": "Zebronics",
+    "price": 1499, "original_price": 2999, "rating": 4.2, "reviews": 3400,
+    "discount": 50, "platform": "Amazon",
+    "features": ["gaming", "mechanical", "rgb", "wired"],
+    "specs": {"Type": "Mechanical", "Switches": "Blue Switches", "RGB": "Yes"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["budget mechanical", "entry level gaming"]
+  },
+  {
+    "id": 95, "name": "Bajaj 3L Instant Water Heater", "category": "appliances", "brand": "Bajaj",
+    "price": 2799, "original_price": 4450, "rating": 4.3, "reviews": 8900,
+    "discount": 37, "platform": "Flipkart",
+    "features": ["water heater", "fast heating", "compact"],
+    "specs": {"Capacity": "3L", "Wattage": "3000W", "Type": "Instant"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["winter essential", "quick heat"]
+  },
+  {
+    "id": 96, "name": "Xiaomi Pad 6", "category": "tablet", "brand": "Xiaomi",
+    "price": 26999, "original_price": 31999, "rating": 4.5, "reviews": 4100,
+    "discount": 15, "platform": "Amazon",
+    "features": ["tablet", "performance", "study", "high refresh rate"],
+    "specs": {"Display": "11 inch 144Hz", "RAM": "8GB", "Storage": "256GB", "Battery": "8840mAh"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["value tablet", "multimedia beast"]
+  },
+  {
+    "id": 97, "name": "Vivo X100", "category": "phone", "brand": "Vivo",
+    "price": 63999, "original_price": 69999, "rating": 4.6, "reviews": 1100,
+    "discount": 8, "platform": "Flipkart",
+    "features": ["pro camera", "performance", "5g", "fast charging"],
+    "specs": {"RAM": "12GB", "Storage": "256GB", "Camera": "50MP+50MP+64MP", "Battery": "5000mAh"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["camera flagship", "zeiss optics"]
+  },
+  {
+    "id": 98, "name": "Apple MacBook Pro M3", "category": "laptop", "brand": "Apple",
+    "price": 169900, "original_price": 169900, "rating": 4.9, "reviews": 450,
+    "discount": 0, "platform": "Amazon",
+    "features": ["pro performance", "coding", "video editing", "high end"],
+    "specs": {"Processor": "Apple M3", "RAM": "8GB", "Storage": "512GB SSD", "Display": "14.2 inch Liquid Retina XDR"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["creator choice", "ultimate performance"]
+  },
+  {
+    "id": 99, "name": "Oppo Enco Air 3 Pro", "category": "earphones", "brand": "Oppo",
+    "price": 4999, "original_price": 7999, "rating": 4.3, "reviews": 2500,
+    "discount": 37, "platform": "Amazon",
+    "features": ["noise cancellation", "tws", "hi-res audio", "wireless"],
+    "specs": {"Type": "TWS", "Battery": "30 hours", "ANC": "49dB", "Driver": "12.4mm Bamboo"},
+    "sentiment": "positive", "price_drop": true,
+    "tags": ["mid range ANC", "balanced sound"]
+  },
+  {
+    "id": 100, "name": "Logitech G502 Hero Mouse", "category": "accessories", "brand": "Logitech",
+    "price": 3995, "original_price": 5495, "rating": 4.7, "reviews": 18000,
+    "discount": 27, "platform": "Amazon",
+    "features": ["gaming", "wired", "rgb", "customizable"],
+    "specs": {"DPI": "25600", "Type": "Wired", "Buttons": "11 Programmable", "Weight Tuning": "Yes"},
+    "sentiment": "very positive", "price_drop": false,
+    "tags": ["legendary mouse", "pro gamer choice"]
+  }
+]
