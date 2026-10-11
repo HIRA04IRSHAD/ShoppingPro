@@ -50,7 +50,7 @@ ShoppingPro/
 
 2. Install dependencies
    ```
-   pip install flask
+   pip install -r requirements.txt
    ```
 
 3. Run the application
