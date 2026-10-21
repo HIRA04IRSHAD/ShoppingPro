@@ -1,5 +1,7 @@
 # ShopAI - Smart Shopping Assistant
 
+**Live demo:** https://hira04irshad.github.io/ShoppingPro/ (runs fully in your browser with Pyodide; the first load takes a few seconds)
+
 ShopAI is a Flask-based smart shopping platform that helps users search for products, get personalized recommendations, and find the best deals using an intelligent scoring system.
 
 ## Features
@@ -22,10 +24,12 @@ ShopAI is a Flask-based smart shopping platform that helps users search for prod
 ```
 ShoppingPro/
 ├── app.py              # Flask app and API routes
+├── assistant.py        # Query handling shared by Flask and the browser demo
 ├── recommender.py      # Search, category detection, and recommendation logic
 ├── deal_score.py        # Deal score calculation engine
 ├── db_manager.py        # Data access layer for products.json
 ├── products.json        # Product database
+├── index.html           # GitHub Pages demo (same Python logic via Pyodide)
 ├── templates/
 │   └── index.html       # Main frontend page
 └── static/
@@ -70,6 +74,10 @@ ShoppingPro/
 3. `recommender.py` extracts category, budget, brand, and feature signals from the query
 4. Matching products are scored and ranked using both a match score and a deal score
 5. Results are returned as JSON and rendered on the frontend
+
+## Live demo on GitHub Pages
+
+GitHub Pages can only serve static files, so the root `index.html` loads [Pyodide](https://pyodide.org) (Python compiled to WebAssembly) and runs the same `assistant.py`, `recommender.py`, `deal_score.py` and `db_manager.py` in the browser. The Flask app and the demo share one copy of the logic.
 
 ## API
 

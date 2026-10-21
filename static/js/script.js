@@ -6,14 +6,24 @@ window.onload = function() {
     fetchCategoriesOnLanding();
 };
 
+// Sends a query to the Flask /search route, or to the in-browser
+// Python engine (Pyodide) when the GitHub Pages demo has set one up.
+async function runSearch(query) {
+    if (window.shopaiQuery) {
+        return await window.shopaiQuery(query);
+    }
+
+    const response = await fetch('/search', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({query: query})
+    });
+    return await response.json();
+}
+
 async function fetchCategoriesOnLanding() {
     try {
-        const response = await fetch('/search', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({query: 'show categories'})
-        });
-        const data = await response.json();
+        const data = await runSearch('show categories');
 
         if (data.status === "success") {
             const chatBox = document.getElementById('chat-box');
@@ -39,12 +49,7 @@ async function sendMessage() {
     input.value = '';
 
     try {
-        const response = await fetch('/search', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({query: msg})
-        });
-        const data = await response.json();
+        const data = await runSearch(msg);
 
         if (data.status === "success") {
             currentProducts = data.products || [];
@@ -54,9 +59,13 @@ async function sendMessage() {
             appendAIMessage(data.reply, chatBox);
             document.getElementById('sort-filter').value = 'deal';
             applySorting();
+        } else {
+            console.error("Search error:", data.message);
+            appendAIMessage("Sorry, something went wrong with that search. Please try again.", chatBox);
         }
     } catch (error) {
         console.error("Search error:", error);
+        appendAIMessage("Sorry, the search engine is not available right now. Please refresh the page.", chatBox);
     }
     chatBox.scrollTop = chatBox.scrollHeight;
 }
@@ -77,8 +86,10 @@ function appendUserMessage(text, chatBox) {
     div.className = 'msg user-msg';
     div.innerHTML = `
         <div class="msg-avatar"><i class="fa-solid fa-user"></i></div>
-        <div class="msg-bubble">${text}</div>
+        <div class="msg-bubble"></div>
     `;
+    // textContent so typed text is shown as text, never run as HTML
+    div.querySelector('.msg-bubble').textContent = text;
     chatBox.appendChild(div);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
